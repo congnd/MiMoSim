@@ -16,8 +16,9 @@ class AppMain {
         let window = WheelWindow(contentRect: frame, styleMask: .borderless, backing: .buffered, defer: false)
         window.collectionBehavior = .moveToActiveSpace
         window.backgroundColor = .clear
-        window.makeKeyAndOrderFront(nil)
         window.level = .statusBar
+        window.makeKeyAndOrderFront(nil)
+        window.alphaValue = 0
         return window
     }()
 
@@ -36,9 +37,9 @@ class AppMain {
                 /// Inactivate the app to ultilize the `.moveToActiveSpace` collectionBehavior of the window.
                 NSApp.hide(NSApp)
             case .listening:
-                NSApp.activate(ignoringOtherApps: true)
-                mainWindow.alphaValue = 0.25
+                break
             case .running:
+                NSApp.activate(ignoringOtherApps: true)
                 mainWindow.alphaValue = 1
             }
         }
