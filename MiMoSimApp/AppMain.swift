@@ -54,7 +54,10 @@ class AppMain {
         let menu = NSMenu(title: "MiMoSim")
         statusBarItem.menu = menu
         
-        menu.addItem(withTitle: "Quit", action: #selector(performTerminate), keyEquivalent: "")
+        let item = NSMenuItem(title: "Quit", action:  #selector(performTerminate), keyEquivalent: "")
+        item.target = self
+        
+        menu.addItem(item)
         
         if !AXIsProcessTrusted() {
             print("Could not start event monitoring.")
