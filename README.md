@@ -24,11 +24,8 @@ Scroll content by moving the mouse in a circular path.
 - Release the control key to finish
 
 ***Watch this video for more detail:***
-<iframe width="560" height="315"
-src="https://www.youtube.com/watch?v=VlE2XT3h_F8" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+
+[https://www.youtube.com/watch?v=VlE2XT3h_F8](https://www.youtube.com/watch?v=VlE2XT3h_F8)
 
 ## FAQ
 ### How to terminate MiMoSim?
